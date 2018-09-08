@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons start>
+      <button ion-button clear (click)="claimpageshow()">
+        Claim
+      </button>
+    </ion-buttons>
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
+    <ion-buttons end>
+      <button ion-button clear (click)="loginpageshow()">
+        Logout
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-item>
+    <button ion-button medium (click)="ailmentpageshow()" block outline>Request Leave</button>
+  </ion-item>
 </ion-content>

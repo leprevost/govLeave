@@ -16,7 +16,13 @@ import { AilmentPage } from '../pages/ailment/ailment';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    LoginPage,
+    HomePage,
+    AilmentPage,
+    ChatPage,
+    ClaimPage,
+    ContactPage,
+    StatisticsPage
   ],
   imports: [
     BrowserModule,
@@ -25,8 +31,8 @@ import { AilmentPage } from '../pages/ailment/ailment';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
     LoginPage,
+    HomePage,
     AilmentPage,
     ChatPage,
     ClaimPage,

@@ -6,13 +6,28 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>contact</ion-title>
+  <ion-navbar hideBackButton="true">
+    <ion-buttons start>
+      <button ion-button clear (click)="backbtn()">
+        Back
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Contact
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button clear (click)="homeRoot()">
+        Home
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <button ion-button medium block outline>
+    Send
+    <ion-icon name="mail"></ion-icon>
+  </button>
 </ion-content>

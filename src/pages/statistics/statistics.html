@@ -6,13 +6,34 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>statistics</ion-title>
+  <ion-navbar hideBackButton="true">
+    <ion-buttons start>
+      <button ion-button clear (click)="backbtn()">
+        Back
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Statistics
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button clear (click)="homeRoot()">
+        Home
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-item>
+    <ion-label>I commit that my current condition will not be fit for work
+    </ion-label>
+    <ion-checkbox></ion-checkbox>
+    <!--[(ngModel)]="pepperoni" -->
+  </ion-item>
+  <button ion-button medium (click)="contactpageshow()" block outline>
+    Next
+    <ion-icon name="arrow-round-forward"></ion-icon>
+  </button>
 </ion-content>

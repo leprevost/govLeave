@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { StatisticsPage } from '../statistics/statistics';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the AilmentPage page.
@@ -20,6 +22,12 @@ export class AilmentPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AilmentPage');
+  }
+  statisticspageshow(){
+    this.navCtrl.push(StatisticsPage);
+  }
+  backbtn(){
+    this.navCtrl.setRoot(HomePage);
   }
 
 }

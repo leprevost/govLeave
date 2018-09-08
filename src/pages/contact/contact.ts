@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the ContactPage page.
  *
@@ -21,5 +21,10 @@ export class ContactPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContactPage');
   }
-
+  backbtn(){
+    this.navCtrl.pop();
+  }
+  homeRoot(){
+    this.navCtrl.setRoot(HomePage);
+  }
 }

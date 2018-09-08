@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { ChatPage } from '../chat/chat';
 
 /**
  * Generated class for the ClaimPage page.
@@ -21,5 +23,11 @@ export class ClaimPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ClaimPage');
   }
-
+  backbtn(){
+    this.navCtrl.setRoot(HomePage);
+  }
+  chatpageshow(){
+    this.navCtrl.push(ChatPage);
+  }
+ 
 }

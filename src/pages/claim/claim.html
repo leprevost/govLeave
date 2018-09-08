@@ -6,13 +6,23 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>claim</ion-title>
+  <ion-navbar hideBackButton="true">
+    <ion-buttons end>
+      <button ion-button clear (click)="backbtn()">
+        Back
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Claim
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-item>
+    <button ion-button medium (click)="chatpageshow()" block outline>
+      Temporary
+    </button>
+  </ion-item>
 </ion-content>
