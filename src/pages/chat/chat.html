@@ -26,5 +26,19 @@
 
 
 <ion-content padding>
-
+  <ion-footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 (click)="sendMessage()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-col>
+        <ion-col col-8>
+          <ion-input type="text" placeholder="Type a message" name="message"></ion-input>
+        </ion-col>
+        <ion-col col-2 (click)="sendMessage()">
+          <ion-icon name="paper-plane"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
 </ion-content>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 /**
  * Generated class for the ContactPage page.
@@ -15,7 +15,7 @@ import { HomePage } from '../home/home';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -25,6 +25,16 @@ export class ContactPage {
     this.navCtrl.pop();
   }
   homeRoot(){
+    this.navCtrl.setRoot(HomePage);
+  }
+
+  sendAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Request Sent!',
+      subTitle: 'Remember to check your messages incase of further contact from your employer',
+      buttons: ['Dismiss']
+    });
+    alert.present();
     this.navCtrl.setRoot(HomePage);
   }
 }

@@ -21,6 +21,31 @@
 
 
 <ion-content padding>
+  <ion-list multiple="false">
+
+    <ion-item>
+      <ion-label>Flu/Cold</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Injury</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Migrane</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Other</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-label color="primary"></ion-label>
+    <ion-input placeholder="Please enter a description of your abscence"></ion-input>
+  </ion-item>
   <ion-item>
     <button ion-button medium (click)="statisticspageshow()" block outline>
       Next

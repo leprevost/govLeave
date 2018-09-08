@@ -17,7 +17,20 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-item>
+    <ion-label color="primary"></ion-label>
+    <ion-input placeholder="Please enter a description of your abscence"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Select Reason for leave</ion-label>
+    <ion-select multiple="false">
+      <!--[(ngModel)]="toppings"-->
+      <ion-option>Physical Illness</ion-option>
+      <ion-option>Stress</ion-option>
+      <ion-option>Maternity</ion-option>
+      <ion-option>Other</ion-option>
+    </ion-select>
+  </ion-item>
   <ion-item>
     <button ion-button medium (click)="ailmentpageshow()" block outline>Request Leave</button>
   </ion-item>

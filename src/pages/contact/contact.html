@@ -26,8 +26,32 @@
 
 
 <ion-content padding>
-  <button ion-button medium block outline>
+  <ion-item>
+    <ion-icon name="person" item-left primary></ion-icon>
+    <ion-input type="text" placeholder="Employer's Name" floating></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="md-business" item-left primary></ion-icon>
+    <ion-input type="text" placeholder="Company name" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="home" item-left primary></ion-icon>
+    <ion-input type="text" placeholder="Work Address" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="call" item-left primary></ion-icon>
+    <ion-input type="tel" placeholder="Employer's Phone Number" clearInput></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="mail" item-left primary></ion-icon>
+    <ion-input type="mail" placeholder="Employer's Email Address" clearInput></ion-input>
+  </ion-item>
+  <button ion-button medium block outline (click)="sendAlert()">
     Send
-    <ion-icon name="mail"></ion-icon>
+    <ion-icon name="send"></ion-icon>
   </button>
 </ion-content>
