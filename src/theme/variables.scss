@@ -34,14 +34,24 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
+  primary:    #00af66,
+  secondary:  #759E99,
+  danger:     #886C57,
+  light:      #EDEAE7,
   dark:       #222
 );
 
+@import "ionic.theme.dark";
 
+$card-ios-text-color:(#EDEAE7);
+$card-md-text-color:(#EDEAE7);
+$card-wp-text-color:(#EDEAE7);
+
+$alert-md-background-color: #222; //this makes “black” the background
+$alert-md-button-text-color: #00af66;
+$alert-md-text-color: #00af66;
+
+$alert-button-line-height: 0px;
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

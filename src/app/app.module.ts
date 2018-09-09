@@ -12,6 +12,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { StatisticsPage } from '../pages/statistics/statistics';
 import { LoginPage } from '../pages/login/login';
 import { AilmentPage } from '../pages/ailment/ailment';
+import { ProPage } from '../pages/pro/pro';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AilmentPage } from '../pages/ailment/ailment';
     ChatPage,
     ClaimPage,
     ContactPage,
-    StatisticsPage
+    StatisticsPage,
+    ProPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { AilmentPage } from '../pages/ailment/ailment';
     ChatPage,
     ClaimPage,
     ContactPage,
-    StatisticsPage
+    StatisticsPage,
+    ProPage
   ],
   providers: [
     StatusBar,

@@ -23,7 +23,12 @@
   </ion-navbar>
 
 </ion-header>
-
+<ion-menu [content]="content">
+    <ion-content>
+      <ion-list>
+        <button menuClose ion-item (click)="openProfilePage()">
+          Profile
+        </button>
 
 <ion-content padding>
   <ion-footer>

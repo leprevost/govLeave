@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-buttons start>
-      <button ion-button clear (click)="claimpageshow()">
+      <button ion-button outline (click)="claimpageshow()">
         Claim
       </button>
     </ion-buttons>
@@ -17,13 +17,16 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-label color="primary"></ion-label>
-    <ion-input placeholder="Please enter a description of your abscence"></ion-input>
+  <div class="logo-container">
+    <h2 class="gov">gov<span class="Leave">Leave</span></h2> 
+  </div>
+<br>
+  <ion-item class="clearBackground">
+    <ion-label color="primary">Select a reason for abscence</ion-label>
   </ion-item>
-  <ion-item>
-    <ion-label>Select Reason for leave</ion-label>
-    <ion-select multiple="false">
+  <ion-item class="clearBackground">
+    <ion-label>Please Select One</ion-label>
+    <ion-select multiple="false" class="Select">
       <!--[(ngModel)]="toppings"-->
       <ion-option>Physical Illness</ion-option>
       <ion-option>Stress</ion-option>
@@ -31,7 +34,7 @@
       <ion-option>Other</ion-option>
     </ion-select>
   </ion-item>
-  <ion-item>
-    <button ion-button medium (click)="ailmentpageshow()" block outline>Request Leave</button>
+  <ion-item class="clearBackground">
+    <button ion-button medium (click)="ailmentpageshow()" block outline >Request Leave</button>
   </ion-item>
 </ion-content>

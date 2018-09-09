@@ -1,23 +1,24 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
+  <div class="logo-container">
+    <img class="logo" width="112" height="112" src="assets/imgs/govLeaveLogo.png">
+    <h2 class="gov">my<span class="Leave">Gov</span> <span style="color:#fff">Login</span></h2>
+  </div>
+  <ion-item class="clearBackground">
     <ion-icon name="md-mail" item-left primary></ion-icon>
     <ion-input type="email" placeholder="Email" clearInput></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item class="clearBackground"> 
     <ion-icon name="md-lock" item-left primary></ion-icon>
     <ion-input type="password" placeholder="Password" clearInput></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item class="clearBackground">
     <button ion-button medium (click)="homepageshow()" block outline>Login</button>
   </ion-item>
 </ion-content>
+ 
