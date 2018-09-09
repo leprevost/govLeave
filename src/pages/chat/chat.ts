@@ -45,6 +45,5 @@ export class ChatPage {
       ]
     });
     alert.present();
-    this.viewCtrl.dismiss();
   }
 }
