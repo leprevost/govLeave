@@ -31,7 +31,7 @@ export class ContactPage {
   sendAlert() {
     let alert = this.alertCtrl.create({
       title: 'Request Sent!',
-      subTitle: 'Remember to check your messages incase of further contact from your employer',
+      subTitle: 'Remember to check your messages in case of further contact from your employer',
       buttons: ['Dismiss']
     });
     alert.present();
