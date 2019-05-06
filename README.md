@@ -19,3 +19,8 @@ Parties have the option of negotiating sick leave, and escalating issues to rele
 This app will provide a messaging platform between employers and employees, and also present information (health statistics and financial data) relevant to the negotiation of sick leave. AI will track the utilisation of sick leave, and help identify unfair actions by either party.
  
 While health statistics will attempt to inform sick employees of the risks they pose to others or, on the other hand, the consequences of taking unnecessary sick leave.
+
+## Video
+[![GovLeave Video](http://img.youtube.com/vi/TmtHUVM4VtM/0.jpg)](http://www.youtube.com/watch?v=TmtHUVM4VtM)
+
+https://www.youtube.com/watch?v=TmtHUVM4VtM
